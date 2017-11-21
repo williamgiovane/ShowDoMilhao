@@ -46,7 +46,7 @@ public class PerguntasRespostas extends javax.swing.JFrame {
 
         btD.setText("Alternativa D");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Willi\\Documents\\GitHub\\ShowDoMilhao\\img\\Silvio2.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Workspace\\ShowDoMilhao\\img\\Silvio2.jpg")); // NOI18N
 
         btPular.setText("Pular");
 
@@ -71,7 +71,7 @@ public class PerguntasRespostas extends javax.swing.JFrame {
                     .addComponent(btA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btPular, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btSair, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel1)
