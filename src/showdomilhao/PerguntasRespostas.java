@@ -46,7 +46,7 @@ public class PerguntasRespostas extends javax.swing.JFrame {
 
         btD.setText("Alternativa D");
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Willi\\Documents\\NetBeansProjects\\ShowDoMilhao\\img\\Silvio2.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Willi\\Documents\\GitHub\\ShowDoMilhao\\img\\Silvio2.jpg")); // NOI18N
 
         btPular.setText("Pular");
 

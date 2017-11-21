@@ -37,7 +37,7 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbSilvio.setIcon(new javax.swing.ImageIcon("C:\\Users\\Willi\\Documents\\NetBeansProjects\\ShowDoMilhao\\img\\Silvio.jpg")); // NOI18N
+        lbSilvio.setIcon(new javax.swing.ImageIcon("C:\\Users\\Willi\\Documents\\GitHub\\ShowDoMilhao\\img\\Silvio.jpg")); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Show do Milhão");
