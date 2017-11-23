@@ -5,20 +5,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Pergunta extends Categoria {
+public class Resposta extends Categoria {
+    
+    ArrayList<String> respostas = new ArrayList<String>();
 
-    ArrayList<String> perguntas = new ArrayList<String>();
-
-    public Pergunta(String categoria) {
+    public Resposta(String categoria) {
         super(categoria);
     }
-
-    private void buscaPerguntas() {
+    
+    private void buscaRespostas() {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/perguntas.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/respostas.txt"));
             String linha;
             while ((linha = br.readLine()) != null) {
-                perguntas.add(linha);
+                respostas.add(linha);
             }
 
             br.close();
@@ -28,9 +28,9 @@ public class Pergunta extends Categoria {
         }
     }
 
-    public ArrayList<String> getPerguntas() {
-        buscaPerguntas();
-        return perguntas;
+    public ArrayList<String> getRespostas() {
+        buscaRespostas();
+        return respostas;
     }
 
 }
