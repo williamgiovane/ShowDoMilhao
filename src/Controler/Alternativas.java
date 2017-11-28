@@ -9,10 +9,10 @@ public class Alternativas extends Categoria {
     
     ArrayList<String[]> alternativas = new ArrayList<String[]>();
 
-    public Alternativas(String categoria) {
-        super(categoria);
+    public Alternativas(String categoria, Pessoa pessoa) {
+        super(categoria, pessoa);
     }
-    
+
     private void buscaAlternativas() {
         try {
             BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/alternativas.txt"));

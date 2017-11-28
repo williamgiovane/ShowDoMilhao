@@ -9,10 +9,10 @@ public class Resposta extends Categoria {
     
     ArrayList<String> respostas = new ArrayList<String>();
 
-    public Resposta(String categoria) {
-        super(categoria);
+    public Resposta(String categoria, Pessoa pessoa) {
+        super(categoria, pessoa);
     }
-    
+
     private void buscaRespostas() {
         try {
             BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/respostas.txt"));

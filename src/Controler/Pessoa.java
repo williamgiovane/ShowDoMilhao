@@ -1,20 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Controler;
 
-/**
- *
- * @author guiri
- */
 class Pessoa {
     
     private String nome;
-    private int pontos;
+    private Pontuacao pontos;
 
-    public Pessoa(String nome, int pontos) {
+    public Pessoa(String nome, Pontuacao pontos) {
         this.nome = nome;
         this.pontos = pontos;
     }
@@ -27,13 +18,12 @@ class Pessoa {
         this.nome = nome;
     }
 
-    public int getPontos() {
+    public Pontuacao getPontos() {
         return pontos;
     }
 
-    public void setPontos(int pontos) {
+    public void setPontos(Pontuacao pontos) {
         this.pontos = pontos;
     }
-    
     
 }

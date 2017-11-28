@@ -9,8 +9,8 @@ public class Pergunta extends Categoria {
 
     ArrayList<String> perguntas = new ArrayList<String>();
 
-    public Pergunta(String categoria) {
-        super(categoria);
+    public Pergunta(String categoria, Pessoa pessoa) {
+        super(categoria, pessoa);
     }
 
     private void buscaPerguntas() {
