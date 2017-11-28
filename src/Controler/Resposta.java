@@ -9,13 +9,13 @@ public class Resposta extends Categoria {
     
     ArrayList<String> respostas = new ArrayList<String>();
 
-    public Resposta(String categoria, Pessoa pessoa) {
-        super(categoria, pessoa);
+    public Resposta(String categoria) {
+        super(categoria);
     }
 
-    private void buscaRespostas() {
+    private void buscaRespostas(String categoria) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/respostas.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/" + categoria + "/respostas.txt"));
             String linha;
             while ((linha = br.readLine()) != null) {
                 respostas.add(linha);
@@ -28,8 +28,8 @@ public class Resposta extends Categoria {
         }
     }
 
-    public ArrayList<String> getRespostas() {
-        buscaRespostas();
+    public ArrayList<String> getRespostas(String categoria) {
+        buscaRespostas(categoria);
         return respostas;
     }
 

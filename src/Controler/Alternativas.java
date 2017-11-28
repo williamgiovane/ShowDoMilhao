@@ -9,13 +9,13 @@ public class Alternativas extends Categoria {
     
     ArrayList<String[]> alternativas = new ArrayList<String[]>();
 
-    public Alternativas(String categoria, Pessoa pessoa) {
-        super(categoria, pessoa);
+    public Alternativas(String categoria) {
+        super(categoria);
     }
 
-    private void buscaAlternativas() {
+    private void buscaAlternativas(String categoria) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/alternativas.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/" + categoria + "/alternativas.txt"));
             String linha;
             
             while ((linha = br.readLine()) != null) {
@@ -29,8 +29,8 @@ public class Alternativas extends Categoria {
         }
     }
 
-    public ArrayList<String[]> getAlternativas() {
-        buscaAlternativas();
+    public ArrayList<String[]> getAlternativas(String categoria) {
+        buscaAlternativas(categoria);
         return alternativas;
     }
 }

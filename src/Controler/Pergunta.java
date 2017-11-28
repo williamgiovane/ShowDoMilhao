@@ -9,13 +9,13 @@ public class Pergunta extends Categoria {
 
     ArrayList<String> perguntas = new ArrayList<String>();
 
-    public Pergunta(String categoria, Pessoa pessoa) {
-        super(categoria, pessoa);
+    public Pergunta(String categoria) {
+        super(categoria);
     }
 
-    private void buscaPerguntas() {
+    private void buscaPerguntas(String categoria) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/perguntas.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("C:/Workspace/ShowDoMilhao/perguntas/" + categoria + "/perguntas.txt"));
             String linha;
             while ((linha = br.readLine()) != null) {
                 perguntas.add(linha);
@@ -28,9 +28,14 @@ public class Pergunta extends Categoria {
         }
     }
 
-    public ArrayList<String> getPerguntas() {
-        buscaPerguntas();
-        return perguntas;
+    public String getPerguntaAle(int item) {
+        String perguntaAle = "";
+        return perguntaAle = perguntas.get(item);
     }
 
+    public ArrayList<String> getPerguntas(String categoria) {
+        buscaPerguntas(categoria);
+        return perguntas;
+    }
+    
 }

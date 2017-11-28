@@ -1,13 +1,12 @@
 package Controler;
 
-class Pessoa {
+public class Pessoa extends Pontuacao {
     
     private String nome;
-    private Pontuacao pontos;
 
-    public Pessoa(String nome, Pontuacao pontos) {
+    public Pessoa(String nome, int pontos) {
+        super(pontos);
         this.nome = nome;
-        this.pontos = pontos;
     }
 
     public String getNome() {
@@ -18,12 +17,4 @@ class Pessoa {
         this.nome = nome;
     }
 
-    public Pontuacao getPontos() {
-        return pontos;
-    }
-
-    public void setPontos(Pontuacao pontos) {
-        this.pontos = pontos;
-    }
-    
 }

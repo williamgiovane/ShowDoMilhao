@@ -1,6 +1,6 @@
 package Controler;
 
-public abstract class Jogo {
+public class Jogo {
     
     private Pessoa pessoa;
 
