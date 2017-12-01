@@ -1,9 +1,6 @@
-a)50;b)100;c)1000;d)Nenhuma das anteriores;r)b;
-a)Matilha;b)Rebanho;c)Cardume;d)Cachorros;r)a;
-a)Tiete;b)Nilo;c)Jordão;d)Itajai;r)c;
+﻿a)50;b)100;c)1000;d)Nenhuma das anteriores;r)b;
 a)Monteiro Lobato;b)Chico Xavier;c)Donald Trump;d)Mauricio de Souza;r)a;
 a)Ministro;b)Vice Presidente;c)Senador;d)Deputado;r)b;
-a)Baleia;b)Hipopotamo;c)Pica Pau;d)Golfinho;r)a;
 a)Touro;b)Leão;c)Carneiro;d)Bode;r)c;
 a)Cavalo;b)Cachorro;c)Raposa;d)Rato;r)b;
 a)Rio de Janeiro;b)São Paulo;c)Curitiba;d)Blumenau;r)a;
@@ -13,7 +10,6 @@ a)Abelha;b)Barata;c)Barbeiro;d)Pulga;r)c;
 a)Campal;b)Do Galo;c)Do Vaticano;d)De Sétimo Dia;r)b;
 a)Mamãe Oxum;b)Iemanjá;c)Axé;d)Iansã;r)b;
 a)Manto;b)Núcleo;c)Hidrosfera;d)Litosfera;r)b;
-a)Joana D'Arc;b)Anita Garibaldi;c)Princesa Isabel;d)Imperatriz Leopoldina;r)c;
 a)Seis;b)Sete;c)Oito;d)Nove;r)b;
 a)3;b)7;c)12;d)22;r)b;
 a)Beth;b)Wilma;c)Margarida;d)Clarabela;r)b;
