@@ -5,13 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Alternativas extends Categoria {
+public class Alternativas {
     
-    ArrayList<String[]> alternativas = new ArrayList<String[]>();
-
-    public Alternativas(String categoria) {
-        super(categoria);
-    }
+    ArrayList<String> alternativas = new ArrayList<String>();
 
     private void buscaAlternativas(String categoria) {
         try {
@@ -19,7 +15,7 @@ public class Alternativas extends Categoria {
             String linha;
             
             while ((linha = br.readLine()) != null) {
-                alternativas.add(linha.split(";"));
+                alternativas.add(linha);
             }
 
             br.close();
@@ -29,7 +25,7 @@ public class Alternativas extends Categoria {
         }
     }
 
-    public ArrayList<String[]> getAlternativas(String categoria) {
+    public ArrayList<String> getAlternativas(String categoria) {
         buscaAlternativas(categoria);
         return alternativas;
     }

@@ -5,13 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Resposta extends Categoria {
+public class Resposta {
     
     ArrayList<String> respostas = new ArrayList<String>();
-
-    public Resposta(String categoria) {
-        super(categoria);
-    }
 
     private void buscaRespostas(String categoria) {
         try {

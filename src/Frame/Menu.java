@@ -5,9 +5,6 @@
  */
 package Frame;
 
-import Controler.Categoria;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Willi

@@ -6,11 +6,14 @@
 package Frame;
 
 import Controler.Categoria;
+import Controler.Jogo;
+import Controler.Pessoa;
 import java.util.Random;
 
 public class PerguntasRespostas extends javax.swing.JFrame {
 
     Random random = new Random();
+    Jogo jogo;
     /**
      * Creates new form PerguntasRespostas
      */
@@ -151,13 +154,10 @@ public class PerguntasRespostas extends javax.swing.JFrame {
     }//GEN-LAST:event_btSairActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        Categoria categoria = new Categoria(lbCat.getText());
-        categoria.carregaPerguntasPorCategoria();
-        int qtdPerguntas = categoria.getQtdPerguntas();
-        txtPergunta.setText(categoria.getPerguntaAleatoria(random.nextInt(qtdPerguntas + 1)));
-        
-        
-        
+        Pessoa pessoa = new Pessoa("", Integer.parseInt(lbPontos.getText()));
+        jogo = new Jogo(pessoa, lbCat.getText());
+        jogo.carregaCategoria();
+        carregaQuestao();        
     }//GEN-LAST:event_formWindowOpened
 
 
@@ -175,4 +175,12 @@ public class PerguntasRespostas extends javax.swing.JFrame {
     private javax.swing.JLabel lbPontos;
     private javax.swing.JLabel txtPergunta;
     // End of variables declaration//GEN-END:variables
+
+    private void carregaQuestao() {
+        txtPergunta.setText(jogo.perguntaAleatoria());
+        btA.setText(jogo.alternativas(0));
+        btB.setText(jogo.alternativas(1));
+        btC.setText(jogo.alternativas(2));
+        btD.setText(jogo.alternativas(3));
+    }
 }

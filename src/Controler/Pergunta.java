@@ -5,13 +5,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Pergunta extends Categoria {
+public class Pergunta {
 
     ArrayList<String> perguntas = new ArrayList<String>();
-
-    public Pergunta(String categoria) {
-        super(categoria);
-    }
 
     private void buscaPerguntas(String categoria) {
         try {
@@ -26,11 +22,6 @@ public class Pergunta extends Categoria {
             System.err.printf("Erro na abertura do arquivo: %s.\n",
             e.getMessage());
         }
-    }
-
-    public String getPerguntaAle(int item) {
-        String perguntaAle = "";
-        return perguntaAle = perguntas.get(item);
     }
 
     public ArrayList<String> getPerguntas(String categoria) {
