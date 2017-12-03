@@ -53,12 +53,32 @@ public class PerguntasRespostas extends javax.swing.JFrame {
         });
 
         btA.setText("Alternativa A");
+        btA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAActionPerformed(evt);
+            }
+        });
 
         btB.setText("Alternativa B");
+        btB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btBActionPerformed(evt);
+            }
+        });
 
         btC.setText("Alternativa C");
+        btC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCActionPerformed(evt);
+            }
+        });
 
         btD.setText("Alternativa D");
+        btD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btDActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Workspace\\ShowDoMilhao\\img\\Silvio2.jpg")); // NOI18N
 
@@ -97,9 +117,8 @@ public class PerguntasRespostas extends javax.swing.JFrame {
                             .addComponent(btA, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btPular, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btSair, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
+                                .addComponent(btSair, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(txtPergunta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addComponent(jLabel1))
@@ -138,10 +157,11 @@ public class PerguntasRespostas extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(lbCat))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(lbPontos)))
+                    .addComponent(lbPontos))
+                .addContainerGap())
         );
 
         pack();
@@ -159,6 +179,22 @@ public class PerguntasRespostas extends javax.swing.JFrame {
         jogo.carregaCategoria();
         carregaQuestao();        
     }//GEN-LAST:event_formWindowOpened
+
+    private void btAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAActionPerformed
+        validaResposta("A");
+    }//GEN-LAST:event_btAActionPerformed
+
+    private void btBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btBActionPerformed
+        validaResposta("B");
+    }//GEN-LAST:event_btBActionPerformed
+
+    private void btCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCActionPerformed
+        validaResposta("C");
+    }//GEN-LAST:event_btCActionPerformed
+
+    private void btDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btDActionPerformed
+        validaResposta("D");
+    }//GEN-LAST:event_btDActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -182,5 +218,13 @@ public class PerguntasRespostas extends javax.swing.JFrame {
         btB.setText(jogo.alternativas(1));
         btC.setText(jogo.alternativas(2));
         btD.setText(jogo.alternativas(3));
+    }
+
+    private void validaResposta(String resposta) {
+        if (jogo.validarResposta(resposta)) {
+            System.out.println("certa resposta");
+        } else {
+            System.out.println("resposta errada");
+        }
     }
 }

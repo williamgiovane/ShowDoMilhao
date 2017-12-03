@@ -37,9 +37,8 @@
                           <Component id="btA" alignment="1" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="btPular" min="-2" pref="100" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace pref="170" max="32767" attributes="0"/>
                               <Component id="btSair" min="-2" pref="100" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Component id="txtPergunta" max="32767" attributes="0"/>
                       </Group>
@@ -91,11 +90,12 @@
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lbCat" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="8" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lbPontos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -105,21 +105,33 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Alternativa A"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btB">
       <Properties>
         <Property name="text" type="java.lang.String" value="Alternativa B"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btBActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btC">
       <Properties>
         <Property name="text" type="java.lang.String" value="Alternativa C"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btD">
       <Properties>
         <Property name="text" type="java.lang.String" value="Alternativa D"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btDActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>

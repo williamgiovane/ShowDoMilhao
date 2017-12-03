@@ -1,5 +1,5 @@
-﻿a)Tiete;b)Nilo;c)Jordão;d)Itajai;r)c;
-a)Monteiro Lobato;b)Chico Xavier;c)Donald Trump;d)Mauricio de Souza;r)a;
-a)Ministro;b)Vice Presidente;c)Senador;d)Deputado;r)b;
-a)Baleia;b)Hipopotamo;c)Pica Pau;d)Golfinho;r)a;
-a)Joana D'Arc;b)Anita Garibaldi;c)Princesa Isabel;d)Imperatriz Leopoldina;r)c;
+﻿A) Tiete;B) Nilo;C) Jordão;D) Itajai;
+A) Monteiro Lobato;B) Chico Xavier;C) Donald Trump;D) Mauricio de Souza;
+A) Ministro;B) Vice Presidente;C) Senador;D) Deputado;
+A) Baleia;B) Hipopotamo;C) Pica Pau;D) Golfinho;
+A) Joana D'Arc;B) Anita Garibaldi;C) Princesa Isabel;D) Imperatriz Leopoldina;

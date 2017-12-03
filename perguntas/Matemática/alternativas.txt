@@ -1,11 +1,11 @@
-﻿a)1ª ordem;b)2ª ordem;c)3ª ordem;d)4ª ordem;r)d;
-a)Losango;b)retângulo;c)quadrado;d)Trapézio
-a)625;b)620;c)50;d)250
-a)3000;b)1000;c)100;d)250
-a)Hipotenusa;b)Triangulo;c)Cateto;d)Diagonais
-a)24;b)20;c)22;d)25
-a)20;b)30;c)40;d)15
-a)180;b)360;c)45;d)90
-a)20;b)15;c)25;d)30
-a)20;b)15;c)2;d)30
-a)LXVI;b)LIV;c)LIII;d)LX
+﻿A) 1ª ordem;B) 2ª ordem;C) 3ª ordem;D) 4ª ordem;
+A) Losango;B) retângulo;C) quadrado;D) Trapézio;
+A) 625;B) 620;C) 50;D) 250;
+A) 3000;B) 1000;C) 100;D) 250;
+A) Hipotenusa;B) Triangulo;C) Cateto;D) Diagonais;
+A) 24;B) 20;C) 22;D) 25;
+A) 20;B) 30;C) 40;D) 15;
+A) 180;B) 360;C) 45;D) 90;
+A) 20;B) 15;C) 25;D) 30;
+A) 20;B) 15;C) 2;D) 30;
+A) LXVI;B) LIV;C) LIII;D) LX;

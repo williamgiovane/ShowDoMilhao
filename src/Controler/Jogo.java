@@ -20,10 +20,6 @@ public class Jogo {
         this.categoria = new Categoria(categoria);
     }
 
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
-    }
-
     public Pessoa getPessoa() {
         return pessoa;
     }
@@ -53,5 +49,13 @@ public class Jogo {
         String alternativas = this.categoria.getAlternativasQuestao(nroQuestao);
         this.alternativasQuestao = alternativas.split(";");
         this.respostasQuestao = this.categoria.getRespostaQuestao(nroQuestao);
+    }
+    
+    public boolean validarResposta(String resposta) {
+        if (resposta.equals(this.respostasQuestao)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
