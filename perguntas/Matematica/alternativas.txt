@@ -1,1 +1,11 @@
-﻿a)10;b)20;c)23;d)1;r)a;
+﻿a)1ª ordem;b)2ª ordem;c)3ª ordem;d)4ª ordem;r)d;
+a)Losango;b)retângulo;c)quadrado;d)Trapézio
+a)625;b)620;c)50;d)250
+a)3000;b)1000;c)100;d)250
+a)Hipotenusa;b)Triangulo;c)Cateto;d)Diagonais
+a)24;b)20;c)22;d)25
+a)20;b)30;c)40;d)15
+a)180;b)360;c)45;d)90
+a)20;b)15;c)25;d)30
+a)20;b)15;c)2;d)30
+a)LXVI;b)LIV;c)LIII;d)LX
