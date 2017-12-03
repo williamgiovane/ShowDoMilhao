@@ -5,10 +5,10 @@
  */
 package Frame;
 
-import Controler.Categoria;
 import Controler.Jogo;
 import Controler.Pessoa;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 public class PerguntasRespostas extends javax.swing.JFrame {
 
@@ -222,9 +222,10 @@ public class PerguntasRespostas extends javax.swing.JFrame {
 
     private void validaResposta(String resposta) {
         if (jogo.validarResposta(resposta)) {
-            System.out.println("certa resposta");
+            JOptionPane.showMessageDialog(null, "Certa Reposta!", "Correto", JOptionPane.INFORMATION_MESSAGE);
+            carregaQuestao();
         } else {
-            System.out.println("resposta errada");
+            JOptionPane.showMessageDialog(null, "Resposta Incorreta!\nVocê Perdeu!", "Incorreto", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
