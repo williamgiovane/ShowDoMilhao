@@ -224,8 +224,14 @@ public class PerguntasRespostas extends javax.swing.JFrame {
         if (jogo.validarResposta(resposta)) {
             JOptionPane.showMessageDialog(null, "Certa Reposta!", "Correto", JOptionPane.INFORMATION_MESSAGE);
             carregaQuestao();
+            lbPontos.setText(Integer.toString(Integer.parseInt(lbPontos.getText()) + 1));
+            if (Integer.parseInt(lbPontos.getText()) == 10) {
+                JOptionPane.showMessageDialog(null, "Parabéns, você atingiu 10 pontos!", "Você Venceu!", JOptionPane.INFORMATION_MESSAGE);
+                btSairActionPerformed(null);
+            }
         } else {
             JOptionPane.showMessageDialog(null, "Resposta Incorreta!\nVocê Perdeu!", "Incorreto", JOptionPane.ERROR_MESSAGE);
+            btSairActionPerformed(null);
         }
     }
 }
