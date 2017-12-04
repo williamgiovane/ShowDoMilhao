@@ -24,11 +24,6 @@ public class Jogo {
         return pessoa;
     }
 
-    public String buscaPergunta(String categoria) {
-
-        return "";
-    }
-
     public void carregaCategoria() {
         this.perguntas = this.categoria.getPerguntas(categoria.getCategoria());
         this.alternativas = this.categoria.getAlternativas(categoria.getCategoria());
