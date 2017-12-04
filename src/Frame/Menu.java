@@ -63,7 +63,7 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        cbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "História", "Matemática", "Geral" }));
+        cbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Geral", "História", "Matemática" }));
 
         jLabel2.setText("Categoria:");
 

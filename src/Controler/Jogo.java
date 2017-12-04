@@ -14,6 +14,7 @@ public class Jogo {
     String respostasQuestao;
     private int nroQuestao;
     Random random = new Random();
+    private ArrayList<Integer> questoesJaPerguntadas;
 
     public Jogo(Pessoa pessoa, String categoria) {
         this.pessoa = pessoa;
@@ -28,10 +29,18 @@ public class Jogo {
         this.perguntas = this.categoria.getPerguntas(categoria.getCategoria());
         this.alternativas = this.categoria.getAlternativas(categoria.getCategoria());
         this.respostas = this.categoria.getRespostas(categoria.getCategoria());
+        this.questoesJaPerguntadas = new ArrayList<Integer>();
     }
 
     public String perguntaAleatoria() {
         this.nroQuestao = random.nextInt(perguntas.size());
+        for (int i = 0; i < this.questoesJaPerguntadas.size(); i++) {
+            if (this.nroQuestao == this.questoesJaPerguntadas.get(i)) {
+                this.nroQuestao = random.nextInt(perguntas.size());
+                i = 0;
+            }
+        }
+        this.questoesJaPerguntadas.add(this.nroQuestao);
         carregaAlternativasResposta();
         return this.perguntas.get(nroQuestao);
     }
@@ -45,7 +54,7 @@ public class Jogo {
         this.alternativasQuestao = alternativas.split(";");
         this.respostasQuestao = this.categoria.getRespostaQuestao(nroQuestao);
     }
-    
+
     public boolean validarResposta(String resposta) {
         if (resposta.equals(this.respostasQuestao)) {
             return true;

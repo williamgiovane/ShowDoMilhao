@@ -1,5 +1,4 @@
 ﻿A) 50;B) 100;C) 1000;D) Nenhuma das anteriores;
-A) Monteiro Lobato;B) Chico Xavier;C) Donald Trump;D) Mauricio de Souza;
 A) Ministro;B) Vice Presidente;C) Senador;D) Deputado;
 A) Touro;B) Leão;C) Carneiro;D) Bode;
 A) Cavalo;B) Cachorro;C) Raposa;D) Rato;
